@@ -15,11 +15,8 @@ public class MaxMin {
                 if (n < 0)
                     break;
 
-                if (n > max)
-                    max = n;
-
-                if (n < min)
-                    min = n;
+                max = n > max ? n : max;
+                min = n < min ? min : min;
             }
             System.out.println("min=" + min + " max=" + max);
         }
