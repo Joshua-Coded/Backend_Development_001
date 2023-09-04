@@ -8,12 +8,14 @@ public class Prime {
 
         int n = s.nextInt();
 
-        int sum = 1;
+        boolean isPrime = true;
 
         for (int i = 2; i <= n / 2; i++)
-            if (n % i == 0)
-                sum += i;
+            if (n % i == 0) {
+                isPrime = false;
+                break;
+            }
 
-        System.out.println(sum == 1 ? "Prime" : "Not Prime");
+        System.out.println(isPrime ? "Prime" : "Not Prime");
     }
 }
