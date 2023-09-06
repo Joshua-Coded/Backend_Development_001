@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.Arrays;
+import java.awt.Point;
 
 public class Fill {
     public static void main(String[] args) {
@@ -19,26 +20,26 @@ public class Fill {
 
         // create a new block of arrays
 
-        int[] numbers = new int[n];
+        Point[] points = new Point[n];
 
         // new method fo filling the arrays
-        fillArrayOfPoints(numbers);
+        fillArrayOfPoints(points);
 
         // print the arrays to the screen method
-        printArrayOfPoints(numbers);
+        printArrayOfPoints(points);
     }
 
-    public static void fillArrayOfPoints(int[] numbers) {
+    private static void fillArrayOfPoints(Point[] points) {
         Scanner input = new Scanner(System.in);
 
-        for (int i = 0; i < numbers.length; i++) {
-            numbers[i] = input.nextInt();
+        for (int i = 0; i < points.length; i++) {
+            points[i] = new Point(input.nextInt(), input.nextInt());
         }
     }
 
-    public static void printArrayOfPoints(int[] numbers) {
+    private static void printArrayOfPoints(Point[] points) {
         System.out.print("The elements of the array are: ");
-        System.out.println(Arrays.toString(numbers));
+        System.out.println(Arrays.toString(points));
     }
 
 }
