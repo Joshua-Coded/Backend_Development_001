@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+// write methods that gets name and age from users
+
 public class GetName {
     public static void main(String[] args) {
 
