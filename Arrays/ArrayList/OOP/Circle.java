@@ -25,7 +25,7 @@ public class Circle {
 
     // method that returns a the radius sqaure
 
-    double getRadius() {
+    double getArea() {
         return Math.PI * this.radius * this.radius;
     }
 
