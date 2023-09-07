@@ -49,6 +49,18 @@ public class Account {
 
     // getter and setters for our properties
 
+    public int countTransactions(char type) {
+        int count = 0;
+
+        for (Transaction transaction : transactions) {
+            if (transaction.getType() == type) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
     public int getId() {
         return id;
     }

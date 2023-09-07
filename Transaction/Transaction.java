@@ -23,4 +23,9 @@ public class Transaction {
 
         this.date = new Date();
     }
+
+    // the getter
+    public char getType() {
+        return type;
+    }
 }
