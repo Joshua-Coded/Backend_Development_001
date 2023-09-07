@@ -7,7 +7,7 @@ public class Client {
     private int id;
     private String name;
     private String phone;
-    ArrayList<Account> accounts;
+    private ArrayList<Account> accounts;
 
     // the constructors
 
@@ -40,8 +40,34 @@ public class Client {
     public String toString() {
         String s = this.id + " " + this.name + " " + this.phone + "\n";
 
+        for (Account account : accounts) {
+            s += account.toString() + "\n";
+        }
+        return s;
     }
 
     // the setters and the getters
+    public int getId() {
+        return id;
+    }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
 }
