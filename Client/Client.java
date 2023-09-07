@@ -32,9 +32,10 @@ public class Client {
                 accounts.remove(account);
                 return true;
             }
-            return false;
+
         }
-    }
+        return false;
+    };
 
     // the toString method
     public String toString() {
