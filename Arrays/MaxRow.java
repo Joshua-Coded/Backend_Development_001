@@ -8,16 +8,18 @@ public class MaxRow {
                 { 12, 5, 6, 7, }
         };
 
-        for (int i = 0; i < 3; i++) {
-            int max = numbers[i][0];
+        for (int i = 0; i < 3; i++)
+            System.out.println("Max row: " + (i + 1) + ": " + getMax(numbers[i]));
 
-            for (int j = 1; j < 4; j++) {
-                max = (numbers[i][j] > max) ? numbers[i][j] : max;
+    }
 
-            }
+    public static int getMax(int[] numbers) {
+        int max = numbers[0];
 
-            System.out.println("Max row: " + (i + 1) + ": " + max);
+        for (int i = 0; i < numbers.length; i++) {
+            max = (max < numbers[i]) ? numbers[i] : max;
 
         }
+        return max;
     }
 }
