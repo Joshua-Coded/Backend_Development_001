@@ -5,14 +5,17 @@ public class Circle {
     // my circle attribute
     Point center;
     double radius;
+    static int numberOfCircles;
 
     // my methods
 
     // default constructor
     Circle() {
+        numberOfCircles++;
     }
 
     Circle(Point center, double radius) {
+        numberOfCircles++;
         this.center = center;
         this.radius = radius;
     }
@@ -36,5 +39,9 @@ public class Circle {
 
     void setRadius(double radius) {
         this.radius = radius;
+    }
+
+    static int getNumberOfCircles() {
+        return numberOfCircles;
     }
 }
