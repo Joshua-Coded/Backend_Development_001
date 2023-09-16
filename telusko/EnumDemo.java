@@ -7,10 +7,10 @@ enum Status {
 public class EnumDemo {
     public static void main(String args[]) {
 
-        Status[] statuses = Status.values();
+        Status[] ss = Status.values();
 
-        for (Status status : statuses) {
-            System.out.println(status + " : " + status.ordinal());
+        for (Status s : ss) {
+            System.out.println(s + " : " + s.ordinal());
         }
 
     }
