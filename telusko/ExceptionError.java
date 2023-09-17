@@ -2,7 +2,7 @@
 
 public class ExceptionError {
     public static void main(String[] args) {
-        int i = 4;
+        int i = 0;
         int j = 0;
 
         try {
@@ -10,7 +10,7 @@ public class ExceptionError {
         }
 
         catch (Exception e) {
-            System.out.println(e + "Sorry something went wrong");
+            System.out.println(e + " " + "Sorry something went wrong");
         }
 
         System.out.println(j);
