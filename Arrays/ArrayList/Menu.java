@@ -7,39 +7,39 @@ public class Menu {
     public static void main(String[] args) {
         ArrayList<Integer> integers = new ArrayList<>();
 
-        Scanner input = new Scanner(System.in);
+        try (Scanner input = new Scanner(System.in)) {
+            while (true) {
+                displayMenu();
+                // read integer from user
+                int choice = input.nextInt();
 
-        // run until user enter exit
+                if (choice == 1) {
+                    // CALL ADD METHOD
+                    System.out.print("Enter an integer");
+                    integers.add(input.nextInt());
+                    System.out.println("Integer Added");
+                } else if (choice == 2) {
+                    // CALL REMOVE METHOD
+                    System.out.print("Enter an integer to remove");
+                    int elementToRemove = input.nextInt();
+                    if (integers.contains(elementToRemove)) {
+                        integers.remove(Integer.valueOf(elementToRemove));
+                        System.out.println("Integer removed");
+                    } else {
+                        System.out.println("Integer not Found!");
+                    }
 
-        while (true) {
-            displayMenu();
-            // read integer from user
-            int choice = input.nextInt();
-
-            if (choice == 1) {
-                // CALL ADD METHOD
-                System.out.print("Enter an integer");
-                integers.add(input.nextInt());
-                System.out.println("Integer Added");
-            } else if (choice == 2) {
-                // CALL REMOVE METHOD
-                System.out.print("Enter an integer to remove");
-                int elementToRemove = input.nextInt();
-                if (integers.contains(elementToRemove)) {
-                    integers.remove(Integer.valueOf(elementToRemove));
-                    System.out.println("Integer removed");
-                } else {
-                    System.out.println("Integer not Found!");
+                } else if (choice == 3) {
+                    System.out.println("Your List: " + integers);
+                } else if (choice == 4) {
+                    System.out.println("Good Bye");
+                    break;
                 }
 
-            } else if (choice == 3) {
-                System.out.println("Your List: " + integers);
-            } else if (choice == 4) {
-                System.out.println("Good Bye");
-                break;
             }
-
         }
+
+        // run until user enter exit
 
     }
 
