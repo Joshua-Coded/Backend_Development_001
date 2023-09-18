@@ -1,0 +1,21 @@
+public access modifier
+
+the  access modifier level is everywhere
+
+--inside a class
+-- outside  a class
+-- inside  the package
+-- outside the package
+
+
+private access modifier Llevel is only inside the class.
+the access is only inside the class
+
+
+static non-access modifier
+you  can access the fields and methods using the class name
+
+example:
+System.out.println
+
+n.b out is static field 
