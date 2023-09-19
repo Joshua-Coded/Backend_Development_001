@@ -21,6 +21,8 @@ public class Main {
 
         else if (op == '*') {
             System.out.println((int) (d1 * d2));
+        } else {
+            System.out.println("Invalid");
         }
 
     }
