@@ -13,10 +13,19 @@ public class Main {
 
         // in a decreasing order
 
-        for (int i = 100; i >= 1; i--) {
-            if (i % 2 == 0) {
-                System.out.println(i + " ");
-            }
+        // for (int i = 100; i >= 1; i--) {
+        // if (i % 2 == 0) {
+        // System.out.println(i + " ");
+        // }
+        // }
+
+        // another way
+        // for (int i = 100; i >= 1; i -= 2) {
+        // System.out.println(i + " ");
+        // }
+
+        for (int i = 1; i <= 100; i += 2) {
+            System.out.println(i + " ");
         }
     }
 }
