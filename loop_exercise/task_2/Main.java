@@ -10,11 +10,12 @@ public class Main {
 
         int sum = 0;
 
-        while (sum <= 100) {
+        do {
             System.out.print("Enter a number: ");
             sum += s.nextInt();
 
-        }
+        } while (sum <= 100)
+ 
         System.out.println("Number exceeded 100!!" + sum);
 
     }
