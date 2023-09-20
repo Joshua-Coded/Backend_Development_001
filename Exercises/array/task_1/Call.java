@@ -6,11 +6,13 @@ import java.awt.Point;
 
 public class Call {
     public static void main(String[] args) {
+
         Scanner s = new Scanner(System.in);
+
         int n = s.nextInt();
 
         while (n > 20 || n <= 0) {
-            System.out.println("INvalid number:: try again");
+            System.out.println("Invalid number:: try again");
             n = s.nextInt();
         }
 
