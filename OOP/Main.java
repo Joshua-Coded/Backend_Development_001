@@ -8,5 +8,6 @@ public class Main {
 
         BoxWeight box3 = new BoxWeight();
         System.out.println(box3.h + " " + box3.radius);
+
     }
 }
