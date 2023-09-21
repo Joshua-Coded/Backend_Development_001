@@ -10,6 +10,6 @@ There is a father who passed physical properties to his son, thereby he is able 
 3. multiple inheritance -> when one class is extending more than one classes.
 4. no hyrid inheritance in java.
 
--- polymorphism --> many ways to represent classes.
+-- polymorphism --> many ways to represent classes. this occurs during inheritance phase
 -- encapsulation
 --
