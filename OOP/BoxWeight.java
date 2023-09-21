@@ -6,7 +6,7 @@ public class BoxWeight extends Box {
         this.radius = -10;
     }
 
-    public BoxWeight(double l, double h, double w) {
+    public BoxWeight(double l, double h, double w, double radius) {
         super(l, h, w);
         this.radius = radius;
     }
