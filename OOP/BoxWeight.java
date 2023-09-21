@@ -1,7 +1,14 @@
+
 public class BoxWeight extends Box {
-    double weight;
+    double radius;
 
     public BoxWeight() {
-        this.weight = -10;
+        this.radius = -10;
     }
+
+    public BoxWeight(double l, double h, double w) {
+        super(l, h, w);
+        this.radius = radius;
+    }
+
 }
