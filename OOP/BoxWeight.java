@@ -11,4 +11,7 @@ public class BoxWeight extends Box {
         this.radius = radius;
     }
 
+    public BoxWeight(BoxPrice old) {
+    }
+
 }
