@@ -1,4 +1,4 @@
-public class Car implements Engine, Break {
+public class Car implements Engine, Break, Media {
 
     @Override
     public void brake() {
@@ -7,12 +7,12 @@ public class Car implements Engine, Break {
 
     @Override
     public void start() {
-        System.out.println("I start like a normal car");
+        System.out.println("I start engine like a normal car");
     }
 
     @Override
     public void stop() {
-        System.out.println("I stop like a normal car");
+        System.out.println("I stop engines like a normal car");
     }
 
     @Override
