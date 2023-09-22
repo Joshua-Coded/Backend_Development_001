@@ -25,4 +25,8 @@ public class NiceCar {
     public void stopMusic() {
         player.stop();
     }
+
+    public void upgradeEngine(Engine engine) {
+        this.engine = engine;
+    }
 }

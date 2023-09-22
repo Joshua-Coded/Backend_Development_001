@@ -11,5 +11,9 @@ public class Main {
         // player.start();
         // player.stop();
 
+        NiceCar car = new NiceCar();
+        car.start();
+        car.startMusic();
+
     }
 }
