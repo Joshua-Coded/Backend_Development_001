@@ -5,6 +5,6 @@ public class Main {
         car.acc();
         car.start();
         car.stop();
-        car.brakes();
+        car.brake();
     }
 }

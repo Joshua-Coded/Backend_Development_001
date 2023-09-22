@@ -1,3 +1,3 @@
-public interface Brake {
+public interface Break {
     void brake();
 }
