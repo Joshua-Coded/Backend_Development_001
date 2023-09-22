@@ -11,3 +11,5 @@ the following are the following packages for in-built packages..
 ** applet packages --> for servers
 ** awt packages --> for creating gui applications .
 ** net package
+
+(n.b) the base of all classes is the Object class.
