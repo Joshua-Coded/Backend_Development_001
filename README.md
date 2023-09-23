@@ -33,35 +33,23 @@ Before diving into the language-specific sections, I believe it's crucial to gra
 
 ### Java
 
-In this section, I'll focus on Java's role in backend development, including popular frameworks like Spring and Spring Boot. Here are the resources I'll explore:
+In this section, I'll focus on Java's role in backend development, including popular frameworks like Spring and Spring Boot. Resources to investigate include:
 
 - [Java Backend Development](https://www.example.com/java-backend): Discover Java's capabilities in backend development.
 
 - [Database Connectivity in Java](https://www.example.com/java-database): Learn how to connect Java applications to databases, including MySQL, PostgreSQL, and MongoDB.
 
-### Ruby
+### Ruby (Coming Soon)
 
-In this section, I'll explore how Ruby and the Ruby on Rails framework can be utilized for backend development. Resources to investigate include:
+Soon, I'll be embarking on my journey to explore how Ruby and the Ruby on Rails framework can be utilized for backend development.
 
-- [Ruby for Backend Development](https://www.example.com/ruby-backend): Discover the power of Ruby for backend tasks.
+### Golang (Coming Soon)
 
-- [Building RESTful APIs with Ruby](https://www.example.com/ruby-apis): Learn to create RESTful APIs using Ruby.
+I have plans to dive into Golang's potential in backend development, exploring its applications and concurrency features.
 
-### Golang
+### Node.js (Coming Soon)
 
-This section is dedicated to Golang's potential in backend development. I'll dive into its applications and concurrency features:
-
-- [Getting Started with Golang](https://www.example.com/golang-start): Begin my journey into Golang's backend capabilities.
-
-- [Concurrency in Golang](https://www.example.com/golang-concurrency): Explore Go's concurrency features for efficient and scalable backend systems.
-
-### Node.js
-
-In this section, I'll harness Node.js for building backend services, with a particular focus on Express.js:
-
-- [Node.js Backend Development](https://www.example.com/nodejs-backend): Explore Node.js for backend services.
-
-- [Real-Time Applications with Node.js](https://www.example.com/nodejs-realtime): Learn how Node.js can be used to build real-time applications with technologies like WebSocket.
+In the near future, I'll harness Node.js for building backend services, with a particular focus on Express.js.
 
 ## Best Practices
 
@@ -90,7 +78,3 @@ This repository is primarily for my personal learning journey. However, if you h
 ## License
 
 This Personal Backend Development Learning Repository is available under the [MIT License](https://opensource.org/licenses/MIT). It's a space for my self-guided learning, but you're welcome to use, modify, and share any valuable resources you find here to support your own learning journey.
-
-
-
-
