@@ -24,4 +24,21 @@ public class Main {
 
         return -1;
     }
+
+    // get the element itself
+    static int linearSearch2(int[] arr, int target) {
+        if (arr.length == 0) {
+            return 0 - 1;
+        }
+
+        else {
+            for (int element : arr) {
+                if (element == target) {
+                    return element;
+                }
+            }
+        }
+
+        return -1;
+    }
 }
