@@ -7,3 +7,22 @@ steps to connecting java applications to database
 5. execute the query
 6. process the result
 7. close the statement
+
+the package used here is the
+
+** java.sql.\* **
+
+the second steps
+2a. load
+2b register
+
+the driver for mysql is
+load this driver ----> com.mysql.jdbc.driver
+register --> using a method called
+class forName("com.mysql.jdbc.driver"); that is how we register a method
+
+establish the connection. you need to instantiate the object...
+
+3 types of statements used in jdbc
+
+1. normal statements 2. prepared statements 3 callable statements
