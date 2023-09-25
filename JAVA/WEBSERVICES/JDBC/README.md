@@ -26,3 +26,18 @@ establish the connection. you need to instantiate the object...
 3 types of statements used in jdbc
 
 1. normal statements 2. prepared statements 3 callable statements
+
+coding format of the above steps...
+
+import java.sql.\*
+main() { }
+Class forName("com.mysql.jdbc.driver")
+Connection com = Driver getConnection("url", "username" , "password");
+statement st = com.createStatement();
+Result rs = st.executeQuery("select \* from students");
+while(rs.next()) {
+rs.getInt(1) + " " + rs.getString(2);
+}
+
+st.close();
+com.close();
