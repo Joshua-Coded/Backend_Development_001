@@ -2,6 +2,7 @@ package com.joshua.joshua;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
@@ -10,7 +11,10 @@ import java.sql.Statement;
 public class DBConfig {
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 //		variables
-		String query = "insert into users values(5, 'Kibo', 70)";
+		int id = 8;
+		String name = "Victor";
+		double score = 79.4;
+		String query = "insert into users values(?,?,?)";
 		
 		// load the driver
 		// oracle.jdbc.Driver.OracleDriver
@@ -25,8 +29,16 @@ public class DBConfig {
 		}
 		
 		// create statement
-		Statement statement = connection.createStatement();
-		int count =  statement.executeUpdate(query);
+		PreparedStatement statement = connection.prepareStatement(query);  // preparedStament for multiple adding of data
+		
+//		we need to update the value by replacing the ??? with the values
+		
+		statement.setInt(1, id);
+		statement.setString(2, name);
+		statement.setDouble(3, score);
+		
+		
+		int count =  statement.executeUpdate();
 //		the part is for updating the database
 		System.out.println(count + "row/s affected");
 		
