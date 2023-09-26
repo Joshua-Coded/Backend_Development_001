@@ -23,21 +23,25 @@ public class DBConfig {
 		
 		// create statement
 		Statement statement = connection.createStatement();
-		ResultSet resultSet =  statement.executeQuery("select * from users where id=1");
-		boolean isFound = false;
+		ResultSet resultSet =  statement.executeQuery("select * from users");
+//		boolean isFound = false;
 		 
-		while(resultSet.next()) {
-			isFound = true;
-			System.out.println("Records found" + resultSet.getInt(1));
+		String userData = "";
+		while(resultSet.next()) 
+		{
+//			isFound = true;
+		 userData = resultSet.getInt(1) + " " + resultSet.getString(2);
+			System.out.println(userData);
 		}
 		
-		if(!isFound) {
-			System.out.println("no record found!");
-		}
+//		if(!isFound) {
+//			System.out.println("no record found!");
+//		}
 		
 		// close the connection
 		resultSet.close();
 		statement.close();
 		connection.close();
 	}
+
 }
