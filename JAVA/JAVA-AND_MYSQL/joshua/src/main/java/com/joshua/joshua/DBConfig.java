@@ -23,12 +23,12 @@ public class DBConfig {
 		
 		// create statement
 		Statement statement = connection.createStatement();
-		ResultSet resultSet =  statement.executeQuery("select * from employees");
+		ResultSet resultSet =  statement.executeQuery("select * from users where id=1");
 		boolean isFound = false;
 		 
 		while(resultSet.next()) {
 			isFound = true;
-			System.out.println("Records found" + resultSet);
+			System.out.println("Records found" + resultSet.getInt(1));
 		}
 		
 		if(!isFound) {
