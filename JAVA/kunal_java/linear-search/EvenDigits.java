@@ -1,41 +1,30 @@
 public class EvenDigits {
     public static void main(String[] args) {
-        int[] nums = {12,345, 2, 6, 7896};
+        int[] nums = { 2, 22, 56, 345, 7896 };
         System.out.println(findNumbers(nums));
     }
 
-    // this is a leetcode question
-    // the method for answer.
-
+    // the method for findNumbers
     static int findNumbers(int[] nums) {
         int count = 0;
         for (int num : nums) {
-            if (even(num)) {
+            if (even(num))
                 count++;
-            }
         }
         return count;
     }
 
-    // the even fucntion
+    // the even for methods
+
     static boolean even(int num) {
         int numberOfDigits = digits(num);
-        if (numberOfDigits % 2 == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return numberOfDigits % 2 == 0;
     }
 
-    // count the number of digits in a number
+    // the digits method
     static int digits(int num) {
-        int count = 0;
-
-        while (num > 0) {
-            count++;
-            num = num / 10;
-        }
-
-        return count;
+        if (num < 0)
+            num = num * -1;
+        return (int) (Math.log10(num)) + 1;
     }
 }
