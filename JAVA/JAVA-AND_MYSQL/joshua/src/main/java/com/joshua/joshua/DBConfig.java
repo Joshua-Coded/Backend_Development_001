@@ -9,6 +9,9 @@ import java.sql.Statement;
 
 public class DBConfig {
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+//		variables
+		String query = "insert into users values(5, 'Kibo', 70)";
+		
 		// load the driver
 		// oracle.jdbc.Driver.OracleDriver
 		Class.forName("com.mysql.cj.jdbc.Driver");
@@ -23,15 +26,28 @@ public class DBConfig {
 		
 		// create statement
 		Statement statement = connection.createStatement();
-		ResultSet resultSet =  statement.executeQuery("select * from users");
+		int count =  statement.executeUpdate(query);
+//		the part is for updating the database
+		System.out.println(count + "row/s affected");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 //		boolean isFound = false;
 		 
-		String userData = "";
-		while(resultSet.next()) 
+//		String userData = "";
+//		while(resultSet.next()) 
 		{
 //			isFound = true;
-		 userData = resultSet.getInt(1) + " " + resultSet.getString(2);
-			System.out.println(userData);
+//		 userData = resultSet.getInt(1) + " " + resultSet.getString(2);
+//			System.out.println(userData);
 		}
 		
 //		if(!isFound) {
@@ -39,7 +55,8 @@ public class DBConfig {
 //		}
 		
 		// close the connection
-		resultSet.close();
+		
+//		resultSet.close();
 		statement.close();
 		connection.close();
 	}
