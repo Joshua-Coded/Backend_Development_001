@@ -22,7 +22,7 @@
       <scope>test</scope>
     </dependency>
     
-   <!-- added new dependency for hibernate and mysql-->
+   <!-- added new dependency for hibernate and the mysql connector-->
    <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
 <dependency>
     <groupId>org.hibernate</groupId>
