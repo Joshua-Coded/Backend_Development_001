@@ -20,7 +20,7 @@ public class App
     	
     	
 //    	save those data in  the database persisting.
-    	Configuration con = new Configuration();
+    	Configuration con = new Configuration().configure();
     	
     	SessionFactory sf = con.buildSessionFactory();
     	

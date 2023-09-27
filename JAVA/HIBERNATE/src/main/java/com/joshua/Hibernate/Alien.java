@@ -1,5 +1,8 @@
 package com.joshua.Hibernate;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Alien {
 	
 	private int aid;
