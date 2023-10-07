@@ -31,10 +31,10 @@ public class Main {
          */
 
         int n = 1;
-        while (n <= 10) {
+        while (n <= 2) {
             System.out.println(n + " ");
             System.out.println("Hello ninja");
-            n += 1;
+            n++;
         }
     }
 }
