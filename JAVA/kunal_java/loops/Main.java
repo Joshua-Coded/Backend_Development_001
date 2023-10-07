@@ -16,10 +16,25 @@ public class Main {
         // System.out.println(i);
         // }
 
-        int n = in.nextInt();
-        for (int i = 0; i <= n; i++) {
-            System.out.println(i);
-            System.out.println("Hello world!!");
+        // int n = in.nextInt();
+        // for (int i = 0; i <= n; i++) {
+        // System.out.println(i);
+        // System.out.println("Hello world!!");
+        // }
+
+        /*
+         * while loop
+         * syntax: while (condition){
+         * body
+         * increment;
+         * }
+         */
+
+        int n = 1;
+        while (n <= 10) {
+            System.out.println(n + " ");
+            System.out.println("Hello ninja");
+            n += 1;
         }
     }
 }
