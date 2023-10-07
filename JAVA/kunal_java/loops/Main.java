@@ -12,9 +12,14 @@ public class Main {
 
         // print numbers 1 - 5
 
-        for (int i = 1; i <= 5; i++) {
-            System.out.println(i);
-        }
+        // for (int i = 1; i <= 5; i++) {
+        // System.out.println(i);
+        // }
 
+        int n = in.nextInt();
+        for (int i = 0; i <= n; i++) {
+            System.out.println(i);
+            System.out.println("Hello world!!");
+        }
     }
 }
