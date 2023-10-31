@@ -1,0 +1,5 @@
+com/alana/jersey/service/impl/UserServiceImpl.class
+com/alana/jersey/resources/UserResource.class
+com/alana/jersey/client/UserResourceClient.class
+com/alana/jersey/service/UserService.class
+com/alana/jersey/model/User.class

@@ -1,0 +1,5 @@
+/home/dev-josh/eclipse-workspace/invictus/jersey-crud-app/src/main/java/com/alana/jersey/resources/UserResource.java
+/home/dev-josh/eclipse-workspace/invictus/jersey-crud-app/src/main/java/com/alana/jersey/service/impl/UserServiceImpl.java
+/home/dev-josh/eclipse-workspace/invictus/jersey-crud-app/src/main/java/com/alana/jersey/client/UserResourceClient.java
+/home/dev-josh/eclipse-workspace/invictus/jersey-crud-app/src/main/java/com/alana/jersey/model/User.java
+/home/dev-josh/eclipse-workspace/invictus/jersey-crud-app/src/main/java/com/alana/jersey/service/UserService.java
