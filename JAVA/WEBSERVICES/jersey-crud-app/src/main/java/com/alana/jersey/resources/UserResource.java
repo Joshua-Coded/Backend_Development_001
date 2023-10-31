@@ -53,10 +53,10 @@ public class UserResource {
 	}
 	
 	@DELETE
-	@path("/users/{id}")
+	@Path("/users/{id}")
 	public Response delete(@PathParam("id") long id) {
 		userService.delete(id);
 		return Response.status(202).entity("User deleted Successfully").build();
 	}
 	}
-}
+
