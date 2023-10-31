@@ -30,11 +30,25 @@ public class Main {
          * }
          */
 
+        // int n = 1;
+        // while (n <= 2) {
+        // System.out.println(n + " ");
+        // System.out.println("Hello ninja");
+        // n++;
+        // }
+
+        /*
+         * do while loop
+         * syntax:
+         * do {
+         * 
+         * } while ();
+         */
+
         int n = 1;
-        while (n <= 2) {
-            System.out.println(n + " ");
-            System.out.println("Hello ninja");
+        do {
+            System.out.println(n);
             n++;
-        }
+        } while (n <= 5);
     }
 }
