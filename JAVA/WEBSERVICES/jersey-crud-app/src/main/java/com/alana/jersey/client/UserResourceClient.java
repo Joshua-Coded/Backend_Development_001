@@ -76,7 +76,7 @@ public class UserResourceClient {
 			System.out.println(userJson);
 		}
 		
-//		private static void deleteUser() {
+//		private static void () {
 //			Client client = ClientBuilder.newClient();
 //		
 //			WebTarget webTarget = client.target("http://localhost:8080/jersey-crud-app/api").path("users").path("user/100");
@@ -91,4 +91,3 @@ public class UserResourceClient {
 //		
 		}
 
-}
