@@ -44,25 +44,28 @@ public class SortList {
 //		Collections.sort(employee, new MySort());
 //		System.out.println(employee);
 	
-		Collections.sort(employee, new Comparator<Employee>() {
-
-			@Override
-			public int compare(Employee o1, Employee o2) {
-			
-				return (int) (o1.getSalary() - o2.getSalary());
-			}
-		});
+//		Collections.sort(employee, new Comparator<Employee>() {
+//
+//			@Override
+//			public int compare(Employee o1, Employee o2) {
+//			
+//				return (int) (o1.getSalary() - o2.getSalary());
+//			}
+//		});
+		
+//		getting it via lambdas
+		Collections.sort(employee, (o1, o2) -> (int) (o1.getSalary() - o2.getSalary()));
 		
 		System.out.println(employee);
 		
 	}
 }
 
-class MySort implements Comparator<Employee> {
-
-	@Override
-	public int compare(Employee o1, Employee o2) {
-		return (int) (o1.getSalary() - o2.getSalary());
-	}
-	
-}
+//class MySort implements Comparator<Employee> {
+//
+//	@Override
+//	public int compare(Employee o1, Employee o2) {
+//		return (int) (o1.getSalary() - o2.getSalary());
+//	}
+//	
+//}
