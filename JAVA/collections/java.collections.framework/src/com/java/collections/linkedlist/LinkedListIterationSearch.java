@@ -1,5 +1,6 @@
 package com.java.collections.linkedlist;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class LinkedListIterationSearch {
@@ -15,6 +16,34 @@ public class LinkedListIterationSearch {
 		
 		boolean result = prog.contains("C");
 		System.out.println(result);
+		
+		// find the index of the first  occurrence of an element in the linkedlist
+		int index  = prog.indexOf("core java");
+		System.out.println("index => " + index);
+		
+		// find the index of the last occurence
+		int lastIndex = prog.lastIndexOf("hibernate framework");
+		System.out.println("last index occurence => " + lastIndex);
+		
+		
+//		ITERATOR
+		Iterator<String> iterator =  prog.iterator();
+		while (iterator.hasNext()) {
+			String progg = (String) iterator.next();
+			System.out.println(progg);
+		}
+	
+		//for each to iterate linkedlist
+		prog.forEach((el) -> {
+			System.out.println(el);
+		});
+		
+		// for each advanced loop
+		for (String ele : prog) {
+			System.out.println(ele);
+		}
+		
+		
+		
 	}
-
 }
