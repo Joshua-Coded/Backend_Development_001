@@ -41,7 +41,18 @@ public class SortList {
 		employee.add(new Employee(4, "Bosede", 10, 8000));
 		
 //		Collections.sort(employee, new MySort()); // ASCENDING ORDER
-		Collections.sort(employee, new MySort());
+//		Collections.sort(employee, new MySort());
+//		System.out.println(employee);
+	
+		Collections.sort(employee, new Comparator<Employee>() {
+
+			@Override
+			public int compare(Employee o1, Employee o2) {
+			
+				return (int) (o1.getSalary() - o2.getSalary());
+			}
+		});
+		
 		System.out.println(employee);
 		
 	}

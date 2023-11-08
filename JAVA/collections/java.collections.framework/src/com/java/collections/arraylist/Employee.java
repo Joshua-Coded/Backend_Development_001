@@ -62,6 +62,10 @@ public class Employee {
 	public void setId(int id) {
 		this.id = id;
 	}
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", name=" + name + ", age=" + age + ", salary=" + salary + "]";
+	}
 	
 	
 }
