@@ -31,6 +31,6 @@ public class ListDemo {
 		System.out.println(list);
 		
 //		ACCESSING ELEMENTS FROM A LIST
-		System.out.println(list.get(0));
+		System.out.println(list.get(0)); 
 	} 
 }
