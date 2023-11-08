@@ -30,6 +30,9 @@ public class SortList {
 		Collections.sort(list);  // sort ascending order
 		System.out.println(list);
 		
+		Collections.reverse(list);
+		System.out.println(list);   // descending order
+		
 	}
 
 }
