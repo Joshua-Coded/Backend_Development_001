@@ -25,6 +25,7 @@ public class NeedOfCollections {
 		object[2] = new Book();
 		
 //		there are no ready made API's in Array
+		
 	}
 
 }
